@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="site-header ma1 clearfix">
+				<div class="fl logo">
+					<a href="/Home/Index/index/active/1"><img src="https://img.shoprobam.com/Public/bossnew/images/logo.png"></a>
+				</div>
+				<div class="fr l-three-i">
+					<div class="l-t-w fl f14">
+						<div class="fl"><img src="https://img.shoprobam.com/Public/bossnew/images/l-icon1.png" width="42"></div>
+						<div class="fr col-nine">
+							<h3 class="col-black">全国联保</h3>400家服务网点联合质保
+						</div>
+					</div>
+					<div class="l-t-w fl f14">
+						<div class="fl"><img src="https://img.shoprobam.com/Public/bossnew/images/f-icon6-blue.png" width="42"></div>
+						<div class="fl col-nine" style="padding-left:10px;">
+							<h3 class="col-black">100%免费配送</h3>承诺送货到户
+						</div>
+					</div>
+					<div class="l-t-w1 fl f14">
+						<div class="fl"><img src="https://img.shoprobam.com/Public/bossnew/images/f-icon4-blue.png" width="42"></div>
+						<div class="fl col-nine" style="padding-left:10px;">
+							<h3 class="col-black">15天无理由退货</h3>质量保证 售后无忧
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main" style="padding-bottom:100px;">
+			<!-- login -->
+			<form method="post" id="login_form" >
+				<div class="login ma1 clearfix">
+					<div class="login-img fl">
+						<a href="https://www.shoprobam.com/Article/helpCenter/aid/139" target="_blank"><img src="https://img.shoprobam.com/Public/Uploads/banner5a127149828e2.jpg" style="max-width:650px"></a>
+					</div>
+					<div class="login-txt fl bg-white">
+						<h3 class="f18">账号登录</h3>
+						<div class="log-input mt20 pr"><input type="text" class="l-input to-i" name="m_name" id="m_name" placeholder="请输入用户名或手机号" autocomplete="off">
+							<div class="l-i-icon pa l-size"></div>
+						</div>
+						<div class="log-input mt20 pr"><input name="m_password" id="m_password" type="password" class="l-input to-i" placeholder="请输入密码" autocomplete="off">
+							<div class="l-i-icon pa l-i-1 l-size"></div>
+						</div>
+						<div class="mt15 clearfix">
+							<div class="l-select fl">十天内免登录</div>
+							<a class="fr" href="/Home/User/pageFoget">忘记密码？</a>
+						</div>
+						<div class="l-i-con1 col-blue mt10" id="login-hint"></div><input name="savelogin" id="savelogin" type="hidden" value="0"><input name="backurl" type="hidden" value="aHR0cHM6Ly93d3cuc2hvcHJvYmFtLmNvbS9Ib21lL1VzZXIvcGFnZVJlZ2lzdGVy">
+						<div class="mt10"><input class="l-btn f18 col-white" id="btn" type="button" value="登  录"></div>
+						<div class="mt10 center col-nine">没有老板账号？
+							<a href="register.html" class="col-blue">立即免费注册&gt;&gt;</a>
+						</div>
+						<div class="mt20 col-nine"><span class="middle">快速登录：</span>
+							<a href="https://graph.qq.com/oauth2.0/authorize?client_id=101223829&amp;response_type=code&amp;redirect_uri=http%3A%2F%2Fwww.shoprobam.com%2FHome%2FUser%2FgetToken%3Ftype%3Dqq" target="_blank" class="l-two-i middle"></a><span class="middle col-e">|</span>
+							<a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx3853912dae57e9f5&amp;redirect_uri=http%3A%2F%2Fwww.shoprobam.com%2FHome%2FUser%2FgetToken%3Ftype%3Dwx&amp;response_type=code&amp;scope=snsapi_login&amp;state=STATE#wechat_redirect" target="_blank" class="l-two-i l-qq middle"></a>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+	<script src="jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		function addCookie(key, value, day) {
+			var date = new Date(); //创建日期对象
+			date.setDate(date.getDate() + day); //过期时间：获取当前的日期+天数，设置给date
+			document.cookie = key + '=' + encodeURI(value) + ';expires=' + date; //添加cookie，设置过期时间
+		}
+		$('#btn').on('click', function() {
+			var $username = $('#m_name').val(); //用户名
+			var $password = $('#m_password').val(); //密码
+			$.ajax({
+				type: 'post',
+				url: 'php/login.php',
+				data: { //将用户名和密码传输给后端
+					name: $username,
+					pass: $password
+				},
+				success: function(data) { //请求成功，接收后端返回的值
+					console.log(data)
+					if(!data) { //用户名或者密码错误
+						$("#login-hint").html("用户名或者密码错误!");
+					} else { //成功
+						addCookie('UserName', $username, 7);
+						location.href = 'index.html';
+					}
+				}
+			})
+		});
+	</script>
+</html>

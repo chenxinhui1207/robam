@@ -1,0 +1,531 @@
+.navshow {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+	background: #f5f5f5
+}
+
+.navshow span {
+	margin: 0 10px 0 10px
+}
+
+.shopping-description p {
+	font-size: 12px;
+	color: #c00;
+	padding: 10px 0 15px 0;
+	line-height: 15px
+}
+
+.main {
+	width: 100%;
+	background: #fff;
+	padding: 20px 0 0 0
+}
+
+.main .shopping-show {
+	float: left;
+	width: 500px;
+	position: relative
+}
+
+.main .shopping-show .shopping-description {
+	float: left;
+	width: 690px;
+	padding: 0 0 40px 35px
+}
+
+.main .shopping-show .shopping-description h3 {
+	font-size: 20px;
+	color: #333;
+	line-height: 25px;
+	font-weight: 400
+}
+
+.main .shopping-show .shopping-description>p {
+	font-size: 12px;
+	color: #c00;
+	padding: 10px 0 15px 0;
+	line-height: 15px
+}
+
+.main .shopping-show .shopping-description .promotion {
+	padding: 15px 0 28px 20px;
+	border-top: 1px dashed #e0e0e0;
+	background: #f9f9fa
+}
+
+.shopping-big {
+	width: 500px;
+	height: 500px;
+	border: 1px solid #f0f0f0;
+	position: relative;
+	display: table;
+	z-index: 1
+}
+
+.shopping-big a {
+	width: 500px;
+	height: 500px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center
+}
+
+.shopping-big a span {
+	margin: -1px 0 0 -1px
+}
+
+.shopping-big img {
+	max-width: 100%;
+	max-height: 100%;
+	vertical-align: middle
+}
+
+.shopping-big .microscope {
+	width: 315px;
+	height: 315px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(84, 194, 255, .3);
+	display: none
+}
+
+.shopping-big .magnifier {
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	right: -510px;
+	top: 0;
+	z-index: 1000;
+	overflow: hidden
+}
+
+.shopping-big .magnifier img {
+	top: 0;
+	left: -.802139px
+}
+
+.shopping-big .shopping-list {
+	width: 500px;
+	height: 80px;
+	padding: 20px 0 0 0
+}
+
+.shopping-big .shopping-list .btn-left {
+	width: 18px;
+	height: 30px;
+	float: left;
+	margin-top: 20px
+}
+
+.promotion-price {
+	line-height: 30px
+}
+
+.promotion-price .price-text {
+	font-size: 12px;
+	color: #999;
+	vertical-align: middle;
+	width: 96px;
+	display: inline-block
+}
+
+.promotion-price .price {
+	font-size: 24px;
+	color: #c00;
+	vertical-align: middle;
+	margin: 0 39px 0 0
+}
+
+.promotion-price .reminder {
+	font-size: 12px;
+	color: #999;
+	vertical-align: middle
+}
+
+.coupon-span {
+	margin-left: 30px;
+	padding: 5px 10px;
+	color: #fff;
+	background: #c00;
+	cursor: pointer
+}
+
+.shopping-view {
+	width: 430px;
+	height: 82px;
+	overflow: hidden;
+	float: left;
+	position: relative;
+	margin-left: 22px
+}
+
+.shopping-view ul {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 516px
+}
+
+.shopping-view ul li {
+	float: left;
+	width: 80px;
+	height: 80px;
+	border: 1px solid #f0f0f0;
+	margin: 0 4px 0 0;
+	border-color: #f0f0f0
+}
+
+.shopping-list {
+    width: 500px;
+    height: 80px;
+    padding: 20px 0 0 0;
+}
+
+.shopping-show .magnifier {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    right: -510px;
+    top: 0;
+    z-index: 1000;
+    overflow: hidden;
+    display: none;
+}
+.shopping-show .magnifier img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.shopping-list .btn-left {
+    width: 18px;
+    height: 30px;
+    float: left;
+    margin-top: 20px;
+}
+
+.shopping-list .btn-right {
+	width: 18px;
+	height: 30px;
+	float: right;
+	margin-top: 20px
+}
+
+.gifts {
+	padding: 26px 0 0 0;
+	width: 100%
+}
+
+.shopping-description .promotion .gifts-left {
+	float: left;
+	font-size: 12px;
+	color: #999
+}
+
+.shopping-description .promotion .gifts-right {
+	float: left;
+	margin: 0 0 0 50px;
+	width: 572px
+}
+
+.shopping-description .promotion .gifts-left p {
+	background: #007abe;
+	color: #fff;
+	text-align: center;
+	width: 48px;
+	height: 20px;
+	padding: 0;
+	line-height: 20px;
+	margin: 10px 0 0 0
+}
+
+.shopping-description .promotion .kind {
+	float: left;
+	margin: 0 22px 20px 0
+}
+
+.kind-img {
+	float: left;
+	width: 60px;
+	height: 60px;
+	border: 1px solid #e0e0e0;
+	margin: 0 12px 0 0;
+	position: relative
+}
+
+.kind-img img {
+	width: 100%
+}
+
+.shopping-description .promotion .kind .kind-title {
+	float: left
+}
+
+.zhanshi {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	right: -305px;
+	top: 0;
+	display: none;
+	z-index: 100
+}
+
+
+.zhanshi img {
+	width: 100%
+}
+
+.shopping-description .promotion .kind .kind-title p {
+	font-size: 12px;
+	color: #333;
+	padding: 0;
+	line-height: 18px
+}
+
+.shopping-description .promotion .kind .kind-title p.num {
+	color: #999
+}
+
+.shopping-description .promotion .integral .integral-left {
+	width: 48px;
+	height: 20px;
+	float: left;
+	background: #007abe;
+	line-height: 20px;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	margin-right: 50px
+}
+
+.shopping-description .promotion .integral .integral-right {
+	float: left;
+	font-size: 12px;
+	color: #333;
+	line-height: 20px
+}
+
+.shopping-description .promotion .integral .integral-right span {
+	color: #c00
+}
+
+.shopping-description .evaluation {
+	padding: 5px 0;
+	border-top: 1px dashed #e0e0e0;
+	border-bottom: 1px dashed #e0e0e0;
+	width: 100%
+}
+
+.shopping-description .evaluation .client {
+	float: left;
+	color: #999;
+	font-size: 12px;
+	padding: 0 40px;
+	line-height: 26px
+}
+
+.shopping-description .evaluation .client span {
+	margin: 0 0 0 10px
+}
+
+.shopping-description .evaluation .client span img {
+	margin: 0 3px;
+	width: 12px;
+	vertical-align: middle
+}
+
+.shopping-description .evaluation .hotcakes {
+	float: left;
+	font-size: 12px;
+	color: #999;
+	padding: 0 81px;
+	border-left: 1px dashed #e0e0e0;
+	line-height: 26px
+}
+
+.shopping-description .evaluation .hotcakes span {
+	color: #c00;
+	margin: 0 0 0 5px
+}
+
+#ajaxShowSkus {
+	margin-top: 20px;
+	width: 100%
+}
+
+.shopping-description .typesof .colortype {
+	width: 100%;
+	padding: 14px 0 0 0
+}
+
+.shopping-description .typesof .colortype .color-title {
+	width: 48px;
+	float: left;
+	font-size: 12px;
+	color: #999;
+	margin: 0 50px 0 20px;
+	line-height: 32px;
+	cursor: pointer
+}
+
+.shopping-description .typesof .colortype span {
+	float: left;
+	padding: 0 10px;
+	height: 30px;
+	border: 1px solid #e0e0e0;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	color: #333;
+	margin: 0 19px 0 0;
+	cursor: pointer
+}
+
+.shopping-description .typesof .optionnums {
+	padding: 14px 0 0 0;
+	width: 100%
+}
+
+.shopping-description .typesof .optionnums .optionnums-title {
+	float: left;
+	font-size: 12px;
+	color: #999;
+	margin: 0 74px 0 20px;
+	line-height: 37px
+}
+
+.shopping-description .typesof .optionnums .optionnums-add {
+	float: left
+}
+
+.shopping-description .typesof .optionnums .optionnums-add div {
+	width: 100px;
+	height: 35px;
+	border: 1px solid #e0e0e0
+}
+
+.shopping-description .typesof .optionnums .optionnums-add div span {
+	float: left;
+	width: 30px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	cursor: pointer
+}
+
+.shopping-description .typesof .optionnums .optionnums-add div input {
+	float: left;
+	width: 40px;
+	height: 35px;
+	border: 0;
+	outline: 0;
+	text-align: center;
+	line-height: 35px
+}
+
+.shopping-description .typesof .optionnums .optionnums-add div span {
+	float: left;
+	width: 30px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	cursor: pointer
+}
+
+.shopping-description .typesof .staging {
+	padding: 14px 0 0 0;
+	width: 100%
+}
+
+.shopping-description .typesof .staging .staging-title {
+	float: left;
+	font-size: 12px;
+	color: #999;
+	margin: 0 50px 0 20px;
+	line-height: 35px
+}
+
+.shopping-description .typesof .staging .stagingpotion {
+	float: left
+}
+
+.shopping-description .typesof .staging .stagingpotion .staging-but {
+	padding: 20px 0 0 0
+}
+
+.shopping-description .typesof .staging .stagingpotion .staging-top span {
+	float: left;
+	border: 1px solid #e0e0e0;
+	width: 120px;
+	height: 55px;
+	margin: 0 16px 0 0;
+	text-align: center;
+	line-height: 22px;
+	font-size: 12px;
+	padding: 5px 0 0 0;
+	cursor: pointer
+}
+
+.shopping-description .typesof .staging .stagingpotion .staging-top span i {
+	font-weight: 700
+}
+
+.shopping-description .typesof .staging .stagingpotion .staging-but a {
+	float: left;
+	width: 180px;
+	height: 45px;
+	background: #c00;
+	margin: 0 15px 0 0;
+	text-align: center;
+	line-height: 45px;
+	font-size: 16px;
+	color: #fff
+}
+
+.shopping-description .typesof .staging .stagingpotion .staging-but a.color {
+	background: #007abe;
+	display: none
+}
+
+.shopping-description .typesof .committed {
+	padding: 20px 0 0 0
+}
+
+.shopping-description .typesof .committed .committed-title {
+	float: left;
+	font-size: 12px;
+	color: #999;
+	margin: 0 50px 0 20px;
+	line-height: 18px
+}
+
+.shopping-description .typesof .committed .committedoption {
+	float: left;
+	line-height: 18px
+}
+
+.shopping-description .typesof .committed .committedoption span {
+	font-size: 12px;
+	color: #333;
+	margin: 0 30px 0 0;
+	float: left
+}
+
+.shopping-description {
+	float: left;
+	width: 690px;
+	padding: 0 0 40px 35px
+}
+
+.shopping-description .typesof .staging .stagingpotion .staging-but {
+	padding: 20px 0 0 0
+}
+
+.shopping-description .promotion {
+	padding: 15px 0 28px 20px;
+	border-top: 1px dashed #e0e0e0;
+	background: #f9f9fa
+}

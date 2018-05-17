@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="site-header ma1 clearfix">
+				<div class="fl logo">
+					<a href="/Home/Index/index/active/1"><img src="https://img.shoprobam.com/Public/bossnew/images/logo.png"></a>
+				</div>
+				<div class="fr l-three-i">
+					<div class="l-t-w fl f14">
+						<div class="fl"><img src="https://img.shoprobam.com/Public/bossnew/images/l-icon1.png" width="42"></div>
+						<div class="fr col-nine">
+							<h3 class="col-black">全国联保</h3>400家服务网点联合质保
+						</div>
+					</div>
+					<div class="l-t-w fl f14">
+						<div class="fl"><img src="https://img.shoprobam.com/Public/bossnew/images/f-icon6-blue.png" width="42"></div>
+						<div class="fl col-nine" style="padding-left:10px;">
+							<h3 class="col-black">100%免费配送</h3>承诺送货到户
+						</div>
+					</div>
+					<div class="l-t-w1 fl f14">
+						<div class="fl"><img src="https://img.shoprobam.com/Public/bossnew/images/f-icon4-blue.png" width="42"></div>
+						<div class="fl col-nine" style="padding-left:10px;">
+							<h3 class="col-black">15天无理由退货</h3>质量保证 售后无忧
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<form id="registerForm" action="php/register.php" method="post">
+				<!-- register -->
+				<div class="reg-con bg-white" style="margin-top:50px">
+					<div class="clearfix lin-20">
+						<div class="fl f18"><b>账号注册</b></div>
+						<a href="login.html" class="col-blue fr">立即登录</a>
+					</div>
+					<div class="stepTwo">
+						<div class="log-input mt20 pr"><input type="text" name="username" class="l-input1 to-i m_phone" autocomplete="off" placeholder="请输入手机号" maxlength="11" onkeyup="this.value=this.value.replace(/\D/g,'')">
+							<div class="l-i-icon l-i-i-w pa"></div>
+						</div>
+						<div class="log-input mt15 pr"><input type="password" name="password" class="l-input1 to-i m_password" maxlength="40" onkeyup="this.value=this.value.replace(/\s/g,'')" autocomplete="off" placeholder="请设置密码">
+						<!--密码强度显示-->
+						<label class="pass_level"></label>
+							<div class="l-i-icon l-i-i-w pa l-i-1"></div>
+						</div>
+						<div class="log-input mt15 pr clearfix"><input type="text" name="captcha" maxlength="4" class="l-input1 to-i l-i-w1 fl" autocomplete="off" placeholder="短信验证码">
+							<div class="l-i-icon l-i-i-w pa l-i-3"></div>
+							<div class="l-btn1 fr col-blue" id="get_captcha_button" onclick="get_captcha('register','sms')" style="line-height:50px; text-align:center">获取验证码</div>
+						</div>
+						<div id="captcha_hint"></div>
+						<div class="mt15 gray"> 如果您没有收到短信验证码 <span class="yycode" onclick="get_captcha('register','voice')">获取语音验证码</span></div>
+						<div class="mt15"><input name="savelogin" id="savelogin" type="hidden" value="1"><input name="backurl" type="hidden" value="" id="backurl">
+						<input type="hidden" name="act_type" value="register">
+						<input class="l-btn f18 col-white l-b-h registerButton" name="submit" type="submit" value="立即注册">
+						</div>
+					</div>
+					<div class="mt15 gray"> 点击"立即注册",即表示您同意并愿意遵守
+						<a href="/Home/Article/articleDetail/aid/73" target="_blank"><span class="yycode">《老板电器官方注册协议》</span></a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</form>
+		</div>
+	</body>
+	<script src="jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+
+</html>
