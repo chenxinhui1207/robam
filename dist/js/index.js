@@ -179,9 +179,5 @@
 	});
 	
 	
-	var $cook=$(".cook");
-	if($.cookie('UserName')!=""){
-		var name=$.cookie('UserName');
-		$cook.html("<a href='#'>"+name+"</a>")
-	}
+	
 })();

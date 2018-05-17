@@ -7,8 +7,8 @@
     spic.onmouseenter = function() {
         sf.style.display = 'block';
         bf.style.display = 'block';
-//      sf.style.width = spic.offsetWidth * bf.offsetWidth / bpic.offsetWidth + 'px';
-//      sf.style.height = spic.offsetHeight * bf.offsetHeight / bpic.offsetHeight + 'px';
+        sf.style.width = spic.offsetWidth * bf.offsetWidth / bpic.offsetWidth + 'px';
+        sf.style.height = spic.offsetHeight * bf.offsetHeight / bpic.offsetHeight + 'px';
         var scale = bf.offsetWidth / sf.offsetWidth;
         this.onmousemove = function(ev) {
         	var ev=ev||window.event;
