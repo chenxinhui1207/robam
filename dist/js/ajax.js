@@ -23,7 +23,7 @@
 	        var str=[];
 	        var z=0;
 	        for(var j=0;j<$shangpin.length;j++){
-                str[j]=`<a href="#">
+                str[j]=`<a href="details.html">
                 <img src="${aaa.src[j]}">
                 <div class="commodity-right-text">
                 <p class="right-title">${aaa.title[j]}</p>
